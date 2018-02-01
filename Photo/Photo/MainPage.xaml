@@ -3,9 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Photo"
              x:Class="Photo.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ScrollView>
+        <StackLayout>
+            <Button Text="Prendre une photo" Clicked="PrendrePhoto_Clicked"/>
+            <Button Text="Choisir une photo" Clicked="ChoisirPhoto_Clicked"/>
+            <Image x:Name="image"/>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
